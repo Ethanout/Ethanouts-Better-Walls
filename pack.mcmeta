@@ -5,7 +5,7 @@
     "max_format": [97, 1],
     "supported_formats": {
       "min_inclusive": 15,
-      "max_inclusive": [97, 1]
+      "max_inclusive": 64
     },
     "description": {
       "text": "Ethanout's Better Walls v2.0.0 - Wall template repair",
