@@ -2,31 +2,23 @@
 
 作者：Ethanout
 
-这是一个 Minecraft Java Edition 资源包。它修复石砖墙在调试棒切换到非法连接状态时出现的侧面缺失或透明问题。
+这是一个 Minecraft Java Edition 资源包。它为墙体侧面模型补上缺失的背面，修复调试棒切换连接状态后出现的透明面。
 
 ## 支持版本
 
-- Minecraft Java Edition 1.20.1
-- Minecraft Java Edition 26.3
-- 资源包格式范围：15 到 97
+- Minecraft Java Edition 1.20.1 到 26.3
+- 资源包格式 15 到 97
 
-## 实现方式
+## 覆盖内容
 
-资源包只覆盖以下两个原版模型：
+本包覆盖原版共享墙体模板 `template_wall_side` 和 `template_wall_side_tall`。因此修复适用于使用这两个模板的墙体，不限于石砖墙。
 
-- `minecraft:block/stone_brick_wall_side`
-- `minecraft:block/stone_brick_wall_side_tall`
+模型保留墙体原有尺寸、纹理变量和朝向面裁剪设置，并为背面补上纹理。资源包不包含原版纹理文件。
 
-模型为墙体侧面补上背面纹理，同时保留原版模型的裁剪设置，避免非法连接状态出现透明接缝。资源包不包含 Mojang 的纹理文件，也不修改其他墙体。
+## 安装
 
-## 使用方法
-
-1. 将 ZIP 文件放入 `.minecraft/resourcepacks`。
-2. 在游戏的资源包菜单中启用 `Ethanout's Better Walls`。
-3. 使用调试棒测试石砖墙的连接状态。
+将 ZIP 放入 `.minecraft/resourcepacks`，然后在游戏的资源包菜单中启用本包。更换 ZIP 后可按 F3+T 重新加载资源。
 
 ## 许可证
 
-本项目代码和模型文件使用 MIT License 发布。详见 `LICENSE`。
-
-本资源包不包含 Mojang 的原版纹理文件。
+本项目使用 MIT License。详见 `LICENSE`。
