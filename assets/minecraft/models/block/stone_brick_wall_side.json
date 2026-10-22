@@ -1,0 +1,20 @@
+{
+  "textures": {
+    "wall": "minecraft:block/stone_bricks",
+    "particle": "minecraft:block/stone_bricks"
+  },
+  "elements": [
+    {
+      "from": [5, 0, 0],
+      "to": [11, 14, 8],
+      "faces": {
+        "down": {"texture": "#wall", "cullface": "down"},
+        "up": {"texture": "#wall", "cullface": "up"},
+        "north": {"texture": "#wall", "cullface": "north"},
+        "south": {"texture": "#wall", "cullface": "south"},
+        "west": {"texture": "#wall"},
+        "east": {"texture": "#wall"}
+      }
+    }
+  ]
+}
