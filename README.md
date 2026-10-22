@@ -17,7 +17,7 @@
 - `minecraft:block/stone_brick_wall_side`
 - `minecraft:block/stone_brick_wall_side_tall`
 
-模型直接定义六个面的石砖纹理，并设置粒子纹理。资源包不包含 Mojang 的纹理文件，也不修改其他墙体。
+模型为墙体侧面补上背面纹理，同时保留原版模型的裁剪设置，避免非法连接状态出现透明接缝。资源包不包含 Mojang 的纹理文件，也不修改其他墙体。
 
 ## 使用方法
 
